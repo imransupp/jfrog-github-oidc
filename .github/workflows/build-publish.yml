@@ -16,8 +16,8 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     env:
-      OIDC_AUDIENCE: 'jfrog-github'
-      OIDC_PROVIDER: 'github'
+      OIDC_AUDIENCE: 'my-aud'
+      OIDC_PROVIDER: 'github-jfrog'
       PLATFORM_REPO: 'eks-npm'
     steps:
       - name: Setup Node
